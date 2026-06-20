@@ -1,0 +1,128 @@
+/* Dashboard Base Layout */
+.dashboard-body {
+    display: flex;
+    background-color: #121214;
+    color: #e2e2e5;
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Sidebar Layout */
+.dashboard-sidebar {
+    width: 240px;
+    background-color: #1a1a1e;
+    height: 100vh;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    border-right: 1px solid #2a2a30;
+}
+
+.dashboard-sidebar h2 {
+    color: #ff758f;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.dashboard-sidebar nav a {
+    display: block;
+    color: #a0a0a5;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.dashboard-sidebar nav a.active, .dashboard-sidebar nav a:hover {
+    background-color: #222227;
+    color: #ffffff;
+}
+
+/* Main Content Area */
+.dashboard-main {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+}
+
+.dashboard-header p {
+    color: #a0a0a5;
+    margin: 0 0 2rem 0;
+}
+
+/* Grid & Cards */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.card {
+    background-color: #1a1a1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #2a2a30;
+}
+
+.card h3 {
+    margin: 0;
+    color: #a0a0a5;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.metric-value {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0 0;
+    color: #ff758f;
+}
+
+/* Orders Table */
+.orders-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1e;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a2a30;
+}
+
+.orders-table th, .orders-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #2a2a30;
+}
+
+.orders-table th {
+    background-color: #222227;
+    color: #a0a0a5;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 0.25rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.status-badge.progress { 
+    background-color: rgba(0, 180, 216, 0.15); 
+    color: #00b4d8; 
+}
