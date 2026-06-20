@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridge & Hue — Artist Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-sidebar">
+        <h2>Ridge & Hue</h2>
+        <nav>
+            <a href="#" class="active">📦 Orders</a>
+            <a href="#">📈 Analytics</a>
+        </nav>
+    </div>
+
+    <main class="dashboard-main">
+        <header class="dashboard-header">
+            <h1>Artist Workspace</h1>
+            <p>Track your production pipeline.</p>
+        </header>
+
+        <section class="metrics-grid">
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <p class="metric-value">₱14,250</p>
+            </div>
+            <div class="card">
+                <h3>Active Builds</h3>
+                <p class="metric-value">12</p>
+            </div>
+        </section>
+
+        <section class="orders-section">
+            <h2>Incoming Requests</h2>
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>Client</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Maria Santos</strong></td>
+                        <td>Full Body Figure</td>
+                        <td><span class="status-badge progress">In Progress</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
